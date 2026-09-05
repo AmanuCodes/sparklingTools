@@ -1,2 +1,2 @@
-# sparklingTools
-Digital tools website
+# Sparkling Tools
+Digital tools website from Sparkling Solutions
