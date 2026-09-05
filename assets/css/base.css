@@ -1,0 +1,72 @@
+:root {
+  --primaryColor: #0D1AA5;
+  --secondaryColor: #FFFFFF;
+  --tertiaryColor: #000000;
+  
+  --primaryBg: #F5F6FF;
+  --secondaryBg: dodgerblue;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none 1px black;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* ---- Specific Classes --- */
+
+.top_bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--secondaryBg);
+  position: fixed;
+}
+
+.menu_btn {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: transparent;
+  height: fit-content;
+  margin: 0.5rem;
+}
+
+.menu_btn span {
+  background-color: white;
+  padding: 0.15rem 0.85rem;
+  margin: 0.15rem;
+  border-radius: 0.075rem;
+}
+
+.hero {
+  display: flex;
+  padding: 0.2rem;
+  margin: 0 auto 0.1rem auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_img {
+  width: 20%;
+  border-radius: 0.75rem;
+}
+
+.logo_text {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.1rem 0;
+  margin-left: 0.5rem;
+  font-size: 2rem;
+  font-weight: 900;
+  background: linear-gradient(to right, cyan, white, cyan);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
