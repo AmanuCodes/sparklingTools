@@ -11,7 +11,7 @@
   --bg-quaternary: #0284C7;
   --color-quaternary: #FFFFFF;
 
-  --bg-heading1: ;
+  --bg-heading1: #DADADA;
   --color-heading1: #0083F6;
 
   --bg-heading2: #0083F6;
@@ -43,6 +43,22 @@ body {
   color: var(--color-primary); 
 }
 
+button {
+  min-height: 24px;
+  min-width: 24px;
+  transition: transform 0.1s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* ------------ General Rules -------*/
+
+.removed {
+  display: none;
+}
+
 /* ------------ Specific Rules --- */
 
 /*---- Top bar ---- */
@@ -58,6 +74,7 @@ body {
   top: 0;
   left: 0;
   overflow: hidden;
+  z-index: 1000;
 }
 
 .menu-btn {
@@ -69,11 +86,6 @@ body {
   margin: 0.5rem;
   border: none;
   cursor: pointer;
-  transition: transform 0.1s ease;
-}
-
-.menu-btn:active {
-  transform: scale(0.95);
 }
 
 .menu-btn span {

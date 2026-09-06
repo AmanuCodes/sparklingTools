@@ -16,9 +16,9 @@ h1,h2,h3,h4 {
 
 /*---- Intro page ----*/
 
-#intro-page {
+.intro-page {
   text-align: center;
-  margin-top: 4.6rem;
+  margin-top: 4.6rem !important;
 }
 
 h1 {
@@ -33,4 +33,40 @@ h2 {
   color: var(--color-heading2);
   border-radius: 0.33rem;
   padding: 0.5rem;
+}
+
+/* --- Todo page ----*/
+
+.todo-stack {
+  padding: 0.5rem;
+}
+
+.filter-btn {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.1rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+}
+
+.filter-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+.filter-list {
+  list-style-type: none;
+}
+
+.submit-filter{
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.no-task {
+  width: 75%;
+  margin: 0 auto;
+  color: #B20303;
 }

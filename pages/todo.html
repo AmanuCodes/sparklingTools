@@ -29,21 +29,88 @@
       </div>
       
     </div>
-      
+    
+    <nav>
+      <div>
+        
+      </div>
+      <div>
+        
+      </div>
+    </nav>
+    
   </header>
   
   <main>
     
-    <section id="intro-page">
+    <section class="intro-page" id="intro-page">
       
       <h1>Sparkling Tasks</h1>
       <p>Elevate your productivity with Sparkling Solution's Sparkling Tasks.</p>
       
     </section>
     
-    <section id="todo-page">
+    <section class="todo-page" id="todo-page">
       <h2>To Do List</h2>
-      <div>
+      <div class="todo-stack">
+        
+        <div class="pre-display-box">
+          
+          <div class="add-box">
+            
+          </div>
+          
+          <div class="control-box">
+            
+            <div class="filter-box">
+              <button class="filter-btn">
+                <img src="../assets/icons/filter.png" alt="">
+              </button>
+            </div>
+            
+            <div class="filterer-box">
+              
+              <form class="filter-form" id="filter-form">
+                
+                <fieldset>
+                  
+                  <legend>Filter By State</legend>
+                  
+                  <div>
+                    <ul class="filter-list">
+                      <li onclick= "filterWith('all')">All</li>
+                      <li onclick= "filterWith('active')">Active</li>
+                      <li onclick= "filterWith('done')">Done</li>
+                    </ul>
+                  </div>
+                  
+                </fieldset>
+                 
+                <div>
+                  <input 
+                  type="image" 
+                  class="submit-filter" 
+                  id="submit-filter" 
+                  src="../assets/icons/filter1.png"
+                  >
+                </div>
+                
+              </form>
+              
+            </div>
+            
+          </div>
+          
+        </div>
+        
+        <div class="progress-box">
+          <div class="progress-count" id="progress-count"></div>
+        </div>
+        
+        <div class="display-box">
+          <p class="no-task" id="no-task">You don't have an any tasks. Add tasks to use the to do list</p>
+          <ul class="task-list" id="task-list"></ul>
+        </div>
         
       </div>
     </section>
