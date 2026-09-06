@@ -1,0 +1,36 @@
+section[id*="page"] {
+  min-height: 460px;
+  height: calc(100svh - 4.7rem);
+  overflow: auto;
+  border: solid 0.33rem var(--border-strong);
+  margin: 0.5rem 0.1rem;
+  border-radius: 0.5rem;
+}
+
+h1,h2,h3,h4 {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+/* -------------- Specific Rules ------ */
+
+/*---- Intro page ----*/
+
+#intro-page {
+  text-align: center;
+  margin-top: 4.6rem;
+}
+
+h1 {
+  background-color: var(--bg-heading1);
+  color: var(--color-heading1);
+  border-radius: 0.33rem;
+  padding: 0.5rem;
+}
+
+h2 {
+  background-color: var(--bg-heading2);
+  color: var(--color-heading2);
+  border-radius: 0.33rem;
+  padding: 0.5rem;
+}
