@@ -283,11 +283,22 @@ fieldset ul button {
 
 .control-box {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  padding: 1rem;
+  align-items: center;
+  padding-top: 0.5rem;
   margin: 0.5rem 1rem;
   background-color: var(--bg-hex);
-  border-radius: 0.75rem;
+  border: solid 0.2rem var(--bg-quaternary1);
+  border-radius: 0.3rem;
+}
+
+.control-box hr {
+  background-color: var(--border-strong);
+  width: 100%;
+  height: 0.1rem;
+  border: none;
+  margin: 0.5rem auto;
 }
 
 .filter-box {
@@ -357,11 +368,12 @@ fieldset ul button {
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
-  margin: 0.5rem 0.3rem;
-  border: solid 0.2rem var(--border-accent);
-  border-radius: 0.5rem;
+  margin: 0.5rem auto;
+  margin-bottom: 0;
   background-color: var(--bg-pent);
   color: var(--color-hex);
+  width: 100%;
+  border-radius: 0.3rem;
 }
 
 .progress-count {
@@ -370,6 +382,7 @@ fieldset ul button {
   padding: 0.3rem;
   background-color: var(--bg-hept);
   color: var(--color-heading2);
+  width: fit-content;
 }
 
 .remove-done {
@@ -378,6 +391,7 @@ fieldset ul button {
   padding: 0.3rem 0.5rem;
   border: solid 0.1rem var(--border-strong);
   border-radius: 0.2rem;
+  margin: 0 1rem;
 }
 
 /* -- Task -- */
@@ -387,10 +401,6 @@ fieldset ul button {
   width: 75%;
   margin: 1.5rem auto;
   color: var(--emphasis-red);
-}
-
-.no-todo-li {
-  margin: 1rem;
 }
 
 .no-todo {
@@ -459,7 +469,8 @@ fieldset ul button {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: var(--bg-hex);
+  background-color: var(--bg-quaternary1);
   height: 2rem;
   border-radius: 0.3rem;
+  margin: 0.5rem auto;
 }
