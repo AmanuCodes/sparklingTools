@@ -8,8 +8,15 @@
   --bg-tertiary: #EEF2FF;
   --color-tertiary: #312E81;
 
-  --bg-quaternary: #0284C7;
-  --color-quaternary: #FFFFFF;
+  --bg-quaternary: #0A192F;
+  --color-quaternary: #FFE600;
+  --color-quaternary2: #FFFFFF;
+
+  --bg-pent: #020617;
+  --color-pent: #38BDF8;
+
+  --bg-hex: #1E1B4B;
+  --color-hex: #FACC15;
 
   --bg-heading1: #DADADA;
   --color-heading1: #0083F6;
@@ -20,11 +27,19 @@
   --bg-page: #F8FAFC;
   --color-page: #0F172A;
 
-  --bg-input: #FFFFFF;
-  --color-input: #0F172A;
+  --bg-input1: #0083F6;
+  --color-input1: #FFFFFF;
 
   --border-subtle: #E2E8F0;
   --border-strong: #334155;
+  --border-muted: #CBD5E1;
+  --border-accent: #0083F6;
+  --border-deep: #0A192F;
+  
+  --border-focus1: #38BDF8;
+  --border-focus2: #FACC15;
+  
+  --emphasis-red: #C50909;
 }
 
 * {
@@ -43,13 +58,13 @@ body {
   color: var(--color-primary); 
 }
 
-button {
+button , input[type="image"], input[type="submit"] {
   min-height: 24px;
   min-width: 24px;
   transition: transform 0.1s ease;
 }
 
-button:active {
+button:active , input[type="image"]:active, input[type="submit"]:active {
   transform: scale(0.95);
 }
 
@@ -57,6 +72,10 @@ button:active {
 
 .removed {
   display: none;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 /* ------------ Specific Rules --- */
@@ -74,7 +93,7 @@ button:active {
   top: 0;
   left: 0;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 00;
 }
 
 .menu-btn {
