@@ -138,3 +138,15 @@ button:active , input[type="image"]:active, input[type="submit"]:active {
   font-weight: 900;
   color: #ffffff;
 }
+
+
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  html {
+    font-size: 120%;
+  }
+}
+@media screen and (min-width: 1023.01px) {
+  html {
+    font-size: 150%;
+  }
+}
