@@ -1,20 +1,91 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sparkling Tools</title>
+  <link rel="stylesheet" href="./assets/css/pre.css">
+  <script src="./assets/js/index.js" defer></script>
 </head>
-
 <body>
-  <a href="./pages/todo.html" 
-  style="
-  display:block; 
-  background:dodgerblue; 
-  padding: 1rem;
-  font-size: 2rem;
-  ">Go to To Do Lists app</a>
-</body>
+  <header>
+    
+    <div class="brand">
+      <h1 class="brandn">Sparkling Tools</h1>
+      <p class="brandi">We provide different tools for your needs.</p>
+    </div>
+    
+    <nav>
+      <ul class="vnav">
+        <li><a class="btn" href="./pages/counter.html">Counter</a></li>
+        <li><a class="btn" href="./pages/gallery.html">Gallery</a></li>
+        <li><a class="btn" href="./pages/todo.html">Sparkling Tasks</a></li>
+      </ul>
+    </nav>
 
+    <div class="flexrcc">
+      <div class="invitation">
+        <p>Try text changer and console Logger as a demo for free.</>
+        <div>
+          <a class="btn" href="#demo">Demo &downarrow;</a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  
+  <main>
+    <section id="demo">
+      <h2>Demo</h2>
+      <article id="txtc">
+        <h3>Text Changer</h3>
+        <form>
+          <p>
+            <label for="demoin">Insert the text you want here : </label>
+          </p>
+          <div>
+            <input id="demoin" type="text" name="demoin" placeholder="Type here">
+            <br>
+            <button style="margin-top:20px;" type="submit">💾 Save</button>
+          </div>
+        </form>
+        <p id="demop"></p>
+        <div class="flexra" style="margin-top: 50px;">
+          <button id="txtChanger1" type="button">Change text to Hello</button>
+          <button id="colorChanger1" type="button">Change color to red</button>
+        </div>
+        <div class="flexra">
+          <button id="txtChanger0" type="button">Change text to original</button>
+          <button id="colorChanger0" type="button">Change color to black</button>
+        </div>
+      </article>
+      <article id="loger">
+        <h3>Text Logger</h3>
+        <p>Click any of the list items below to see the text of the next item in the console.</p>
+        <div id="logerBox">
+          <ul id="logerList">
+            <li>Content Engineering</li>
+            <li>Graphics Designing</li>
+            <li>Web Designing</li>
+            <li>Front-End Development</li>
+            <li>Back-End Development</li>
+            <li>Data Base Management</li>
+            <li>Server Maintenance</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div>
+      2026 &copy;
+    </div>
+    <div>
+      Sparkling Tools
+    </div>
+    <div>
+      Amanuel
+    </div>
+  </footer>
+</body>
 </html>

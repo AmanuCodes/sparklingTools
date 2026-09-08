@@ -1,0 +1,443 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /*border: solid 1px red;/**/
+}
+
+html{
+  font-size: 16px;
+}
+
+body{
+  text-align: center;
+  background-color: #1E1B4B;
+  color: white;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 3vh;
+}
+
+header{
+  background-image: url(../images/back.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1vh 5vh #FFFFFF;
+  margin-bottom: 3vh auto;
+  border-radius: 0;
+  min-height: max-content;
+  height: 100vh;
+  overflow: scroll;
+}
+
+section{
+  min-height: 100vh;
+  width: 96%;
+  display: block;
+  margin: 3vh auto;
+  padding: 1vh;
+  box-shadow: 0 0 5vh #FFFFFF;
+  border-radius: 1vh;
+}
+
+section:has(input:focus){
+  min-height: 568px;
+}
+
+footer{
+  display: block;
+}
+
+article{
+  background: #00BEFF;
+  border: solid 0.5vw blue;
+  margin: 5vw;
+  padding: 3vw;
+  border-radius: 2vh;
+}
+
+h1{
+  font-size: 3.3rem;
+  color: Gold;
+}
+
+.brandn{
+  font-size: 3rem;
+  font-family: cursive;
+  color: cyan;
+  margin: 0.67rem auto;
+  text-shadow: 0 0 10px white;
+}
+
+.brandi{
+  margin: 20px auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+  background-color: white;
+  padding: 20px;
+  width: 80%;
+  margin: 3vh auto;
+  box-shadow: 0 0 1vh white;
+  border-radius: 2vw;
+}
+
+/* ---- Common ---- */
+
+.flexrcc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexra button{
+  margin: 10px auto;
+}
+
+button{
+  padding: 1vw;
+  background-color: white;
+  border-width: 3px;
+  border-radius: 10px;
+}
+
+.vnav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; 
+  margin: auto;
+  min-height: 33vh;
+}
+
+.vnav li{
+  width:80%;
+}
+
+.vnav a{
+  width: 100%;
+}
+
+.vnav2{
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5vh;
+  margin: auto;
+}
+
+p{
+  margin: 1vh auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ul, ol, menu {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul ul, ol ol, ul ol, ol ul { 
+  padding-left: 20px; 
+}
+
+menu, nav ol {
+  list-style-type: none;
+  width: max-content;
+}
+
+menu li, nav li {
+  margin: 10px auto; 
+}
+
+div > a, li > a {
+  text-decoration: none; 
+}
+
+li > a {
+  font-size: 1.2rem; 
+}
+
+.centli {
+  margin: auto;
+  padding: 20px;
+  width: fit-content;
+}
+
+.centli li {
+  margin: 5px auto;
+  list-style-position: inside;
+  text-align: left;
+}
+
+.flexra{
+  display: flex;
+  justify-content: space-around;
+}
+
+.flexca{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wfc{
+  width: fit-content;
+}
+
+.hfc{
+  height: fit-content;
+}
+
+.mt5vh{
+  margin-top: 5vh;
+}
+
+.btn {
+  display: inline-block;
+  border: solid 1px white;
+  border-radius: 20px;
+  padding: 4vw;
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.1s ease;
+  margin: 5px;
+} 
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.invitation{
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  padding: 3vh;
+  margin: 0 4vw;
+  background: black;
+  border: solid 0.5vh white;
+  border-radius: 1.5vh;
+}
+
+.invitation > div{
+  margin: 0 auto;
+}
+
+/* ----- Demo -----*/
+
+#demoin{
+  width: 80%;
+  height: 50px;
+  text-align: center;
+}
+
+#demop{
+  border: solid 0.1rem;
+  border-radius: 8px;
+  display: none;
+  padding: 5px;
+  margin: 20px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.dnone{
+  display: none;
+}
+
+
+/* ------ Counter ------ */
+
+.cont{
+  font-size: 2rem;
+  border: solid 1px;
+  transition: 0.1s ease;
+}
+
+.cont:active{
+  transform: scale(0.95);
+}
+
+#reducer{
+  color: red;
+}
+
+#adder{
+  color: blue;
+}
+
+#cnum{
+  display: flex;
+  width: 70vw;
+  height: 70vw;
+  border: solid 5px dodgerblue;
+  padding: 10px;
+  margin: 50px auto;
+  font-size: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#warning{
+  display: none;
+  color: red;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+/* ------ Gallery ------ */
+
+#galbox{
+  width: 70vw;
+  height: 70vw;
+  background-color: white;
+}
+
+select, #poster{
+  font-size: 1.5rem;
+  margin: 10px auto;
+}
+
+#poster{
+  margin-bottom: 10vh;
+  margin-left: 10vw;
+}
+
+#imgsBox{
+  background-color: dodgerblue;
+  padding: 3vh 2vw;
+  border-radius: 2vh;
+  width: 95%;
+  margin: auto;
+}
+
+#imgsBox > img{
+  width: 15vw;
+  height: 15vw;
+  background-color: white;
+  border-radius: 100%;
+  transition: 0.1s ease;
+}
+
+#imgsBox img:active{
+  transform: scale(0.95);
+}
+
+/* ------ To do list ------ */
+
+#plus{
+  width: 13vw;
+  height: 13vw;
+  border-radius: 100%;
+  margin: 20px auto;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+#taskBox{
+  display: none;
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+.taskitem{
+  display: grid;
+  grid-template-columns: 30px auto 20%;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.pspan{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 1vw;
+}
+
+.deletebtn{
+  border: solid 1px;
+  color: red;
+  margin: 3px auto;
+}
+
+/* ------ Loger -------- */
+
+#logerBox{
+  width: 90%;
+  margin: 1vw auto;
+  padding: 0.5vw;
+  background: white;
+  border-radius: 2vh;
+}
+
+#logerList{
+  width: max-content;
+  padding: 1vw;
+  background: white;
+  margin: 3vh auto;
+}
+
+#logerList li{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 5vw;
+  background: black;
+  color: white;
+  font-weight: 800;
+  /*border: solid 0.5vw blue; */
+  border-radius: 2vh;
+  width: 100%;
+  margin: 3vh auto;
+  transition: 0.1s ease;
+} 
+
+#logerList li:active{
+  transform: scale(0.95);
+  background-color: #555;
+}
+
+/* ------ Responsive Design -----*/
+
+@media screen and (min-width: 480px) and (max-width: 1023px){
+  html{
+    font-size: 120%;
+  }
+  
+  button{
+    padding: 1.5vw;
+    border-width: 3px;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    border-radius: 20px;
+    padding: 3.5vw;
+    margin: 5px;
+  } 
+
+}
+
+@media screen and (min-width: 1023.1px){
+  html{
+    font-size: 150%;
+  }
+  button{
+    padding: 2vw;
+    border-width: 5px;
+    border-radius: 15px;
+    }
+  .btn {
+    border-radius: 20px;
+    padding: 2.5vw;
+    margin: 5px;
+  } 
+
+}
+
+/*
+*{
+  border: solid 1px;
+}/**/
