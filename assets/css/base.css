@@ -15,8 +15,11 @@
   --bg-pent: #020617;
   --color-pent: #38BDF8;
 
-  --bg-hex: #1E1B4B;
+  --bg-hex: #1E1B4B ;
   --color-hex: #FACC15;
+  --color-hex1: #FFFFFF;
+  
+  --bg-hept: #018A71;
 
   --bg-heading1: #DADADA;
   --color-heading1: #0083F6;
@@ -54,8 +57,8 @@ html {
 }
 
 body {
-  background-color: var(--bg-primary);
-  color: var(--color-primary); 
+  background-color: var(--bg-hex);
+  color: var(--color-hex2); 
 }
 
 button , input[type="image"], input[type="submit"] {

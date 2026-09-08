@@ -10,6 +10,7 @@
   border: solid 1px ;
 } 
 /**/
+
 section[id*="page"] {
   /*
   min-height: 460px;
@@ -20,6 +21,8 @@ section[id*="page"] {
   border: solid 0.33rem var(--border-strong);
   margin: 0.5rem 1rem;
   border-radius: 0.5rem;
+  box-shadow: 0 0 5vh #FFFFFF;
+  color: var(--color-hex1);
 }
 
 h1,h2,h3,h4 {
@@ -37,20 +40,55 @@ h1,h2,h3,h4 {
 }
 
 h1 {
-  background-color: var(--bg-heading1);
-  color: var(--color-heading1);
+  background-color: var(--bg-heading2);
+  color: var(--color-heading2);
   border-radius: 0.33rem;
   padding: 0.5rem;
 }
 
 .full-logo {
-  width: 90svw;
-  margin-bottom: 5svh;
+  width: 80%;
+  margin: 3svh auto;
+  border-radius: 1rem;
+}
+
+.invitation {
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  margin: 0.5rem 4rem;
+  margin-top: 2svh;
+  background: var(--bg-quaternary);
+  color: var(--color-quaternary2);
+  border: solid 0.1rem var(--border-accent);
+  border-radius: 1rem;
+}
+
+.invitation > div {
+  margin: 0.5rem auto;
+  border: none;
+  padding: 0;
+}
+
+.invitation a {
+  text-decoration: none;
+  display: inline-block;
+  border: solid 0.1rem #FFFFFF;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: dodgerblue;
+  color: white;
+  transition: 0.1s ease;
+  margin: 0.25rem;
+  }
+  
+.invitation a:active {
+  transform: scale(0.95);
 }
 
 h2 {
-  background-color: var(--bg-heading1);
-  color: var(--color-heading1);
+  background-color: var(--bg-heading2);
+  color: var(--color-heading2);
   border-radius: 0.33rem;
   padding: 0.5rem;
 }
@@ -61,7 +99,7 @@ h2 {
 
 form {
   text-align: center;
-  border: solid 0.2rem var(--border-accent);
+  border: solid 0.2rem var(--border-focus1);
   padding: 1rem 0.5rem;
   padding-top: 0.75rem;
   margin: 0.5rem;
@@ -152,7 +190,7 @@ fieldset ul button {
   font-weight: 700;
   width: 100%;
   padding: 0.5rem 0.2rem;
-  margin: 0.7rem;
+  margin: 1rem auto;
   border-radius: 0.3rem;
   background-color: var(--bg-input1);
   color: var(--color-input1);
@@ -181,6 +219,7 @@ fieldset ul button {
   color: var(--color-pent);
   padding: 0.5rem;
   border-radius: 1rem;
+  border:solid 0.2rem var(--border-accent);
 }
 
 /* -- Add -- */
@@ -190,14 +229,17 @@ fieldset ul button {
   justify-content: center;
   align-items: center;
   margin: 0.75rem auto;
-  padding: 0.2rem;
+  padding: 0.5rem;
   width: 100%;
+  border-bottom: solid var(--border-strong);
 }
 
 .add-text {
   display: inline-block;
   margin: auto 1rem;
-  color: var(--color-pent);
+  color: var(--color-hex1);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 .add-btn {
@@ -207,7 +249,7 @@ fieldset ul button {
   height: 2.5rem;
   border-radius: 2.5rem;
   background-color: var(--bg-secondary);
-  color: var(--color-secondary);
+  color: var(--color-hex1);
 }
 
 /* -- Adder -- */
@@ -228,6 +270,8 @@ fieldset ul button {
   right: 0.2rem;
   top: 0;
   line-height: 1;
+  min-width: 48px;
+  min-height: 48px;
 }
 
 .adder-form fieldset {
@@ -240,8 +284,8 @@ fieldset ul button {
 .control-box {
   display: flex;
   justify-content: space-around;
-  padding: 1rem 0.5rem;
-  margin: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 1rem;
   background-color: var(--bg-hex);
   border-radius: 0.75rem;
 }
@@ -251,14 +295,12 @@ fieldset ul button {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 3.2rem;
 }
 
 .filter-btn {
-  width: 100%;
-  height: 100%;
-  padding: 0.1rem;
   border: none;
+  padding: 0 0.5rem;
+  border: solid 0.1rem var(--border-subtle);
   border-radius: 0.3rem;
   background-color: var(--bg-secondary);
   cursor: pointer;
@@ -270,9 +312,14 @@ fieldset ul button {
 }
 */
 .filter-btn img {
-  width: 100%;
-  height: 2rem;
+  border-radius: 0.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: var(--bg-input1);
+}
+
+.filter-btn span {
+  display: block;
 }
 
 .filter-form {
@@ -310,17 +357,18 @@ fieldset ul button {
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
-  margin: 0.3rem;
-  border: solid 1px var(--border-strong);
+  margin: 0.5rem 0.3rem;
+  border: solid 0.2rem var(--border-accent);
+  border-radius: 0.5rem;
+  background-color: var(--bg-pent);
+  color: var(--color-hex);
 }
 
 .progress-count {
   text-align: center;
   font-size: 0.9rem;
   padding: 0.3rem;
-  border: solid 0.2rem var(--border-focus1);
-  border-radius: 0.3rem;
-  background-color: var(--bg-heading2);
+  background-color: var(--bg-hept);
   color: var(--color-heading2);
 }
 
