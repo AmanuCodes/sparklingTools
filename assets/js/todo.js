@@ -72,10 +72,14 @@ function takeGrouper() {
 const noTask = document.querySelector('#no-task');
 const taskList = document.querySelector('#task-list');
 
+let doneCounts = 0;
+
 let tasks = JSON.parse(localStorage.getItem('tasksData')) || [];
 
 function renderTasks(){
   taskList.innerHTML = '';
+  
+  doneCounts = 0;
   
   if(tasks.length > 0){
     if(!noTask.classList.contains('removed')){
@@ -94,7 +98,6 @@ function renderTasks(){
     }
   }
   
-  let doneCounts = 0;
   const tasksLen = tasks.length;
   
   for(let i = 0; i < tasksLen; i++){
@@ -103,6 +106,7 @@ function renderTasks(){
     }
   }
       
+   
   progressCount.textContent = doneCounts + ' Done / '+ tasksLen + ' Total';
   
   let choice;
@@ -267,11 +271,15 @@ const removeDone = document.querySelector('#remove-done');
 removeDone.addEventListener('click', removeCompleted);
 
 function removeCompleted(){
-  let toClear = confirm('Do you want to clear all completed tasks? (This action cannot be undone.)');
-  if (toClear === true){
-    tasks = tasks.filter((task) => task.state === 'active');
-    localStorage.setItem('tasksData', JSON.stringify(tasks));
-    renderTasks();
+  if(doneCounts !== 0){
+    let toClear = confirm('Do you want to clear all completed tasks? (This action cannot be undone.)');
+    if (toClear === true){
+      tasks = tasks.filter((task) => task.state === 'active');
+      localStorage.setItem('tasksData', JSON.stringify(tasks));
+      renderTasks();
+    }
+  }else {
+    window.alert("You don't have any completed tasks.")
   }
 }
 
