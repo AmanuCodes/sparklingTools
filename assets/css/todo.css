@@ -126,8 +126,8 @@ fieldset div {
 }
 
 fieldset input, fieldset textarea {
-  background-color: var(--bg-secondary);
-  color: var(--color-secondary);
+  background-color: var(--bg-input);
+  color: var(--color-input1);
   border: solid 0.1rem var(--border-subtle);
 }
 
