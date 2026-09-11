@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,9 @@
 </head>
 
 <body>
-  
+
   <header>
-    
+
     <div class="top-bar">
       <!--
       <button class="menu-btn" id="menu-btn">
@@ -23,53 +23,53 @@
         <span></span>
       </button>
       -->
-      
+
       <div class="hero">
         <img class="logo-img" src="../assets/logos/sparkTools0.png" alt="Sparkling Tools Logo">
         <a class="logo-text" href="../index.html">Sparkling Tools</a>
       </div>
-      
+
     </div>
-    
+
     <nav>
       <div>
-        
+
       </div>
       <div>
-        
+
       </div>
     </nav>
-    
+
   </header>
-  
+
   <main>
-    
+
     <section class="intro-page" id="intro-page">
-      
+
       <h1>Sparkling Tasks</h1>
       <img src="../assets/logos/sparkTools1.png" alt="Full sparkling tools logo image" class="full-logo">
       <p>Elevate your productivity with Sparkling Solution's Sparkling Tasks.</p>
       <div class="invitation">
-        <p>You can start using our To Do List tool for free.</>
+        <p>You can start using our To Do List tool for free.</p>
         <div>
           <a href="#todo-page">To do list &darr;</a>
         </div>
       </div>
     </section>
-    
+
     <section class="todo-page" id="todo-page">
       <h2>To Do List</h2>
       <div class="todo-stack">
-        
+
         <div class="pre-display-box">
-          
+
           <div class="add-box">
             <span class="add-text">Add Tasks</span>
             <button class="add-btn" id="add-btn">+</button>
           </div>
-          
+
           <div class="control-box" id="control-box">
-            
+
             <div class="filter-box">
               <button class="filter-btn" id="filter-btn">
                 <img src="../assets/icons/filter.png" alt="">
@@ -83,36 +83,36 @@
             </div>
             -->
             <div class="pre-tasks" id="pre-tasks">
-          
+
               <div class="progress-box">
                 <div class="progress-count" id="progress-count"></div>
               </div>
-              
+
               <div class="clear-box">
                 <button class="remove-done" id="remove-done" title="Clear completed tasks">Clear</button>
               </div>
-          
+
             </div>
-            
+
           </div>
-          
+
           <div class="invisibles">
-            
+
             <div class="adder-box" id="adder-box">
               <form class="adder-form removed" id="adder-form">
-                
+
                 <button type="button" class="close-btn" id="close-adder" aria-label="Close">&Cross;</button>
-                
+
                 <p>
-                  Enter tasks informations below. 
+                  Enter tasks informations below.
                   <br>
                   ( <span class="required">*</span> indicates required )
                 </p>
-                
+
                 <fieldset>
-                  
+
                   <legend>Task Informations</legend>
-                  
+
                   <div>
                     <label for="task-name">
                       Task Name
@@ -120,62 +120,50 @@
                     </label>
                   </div>
                   <div>
-                    <input 
-                    type="text" 
-                    class="task-name" 
-                    id="task-name"
-                    maxlength="50"
-                    placeholder="Type your task name"
-                    required
-                    >
+                    <input type="text" class="task-name" id="task-name" maxlength="50" placeholder="Type your task name"
+                      required>
                   </div>
-                  
+
                   <div>
                     <label for="due-date">Due Date</label>
                   </div>
                   <div>
                     <input type="date" class="due-date" id="due-date">
                   </div>
-                  
+
                 </fieldset>
-                
+
                 <fieldset>
-                  
+
                   <legend>Additional Details</legend>
                   <div>
                     <label for="task-note">
-                      Task Description 
+                      Task Description
                       <span class="hint">(Max: 100 characters)</span>
                     </label>
                   </div>
                   <div>
-                    <textarea 
-                    name="task-note" 
-                    id="task-note" 
-                    cols="20" 
-                    rows="4" 
-                    maxlength="100"
-                    placeholder="Task description"
-                    ></textarea>
+                    <textarea name="task-note" id="task-note" cols="20" rows="4" maxlength="100"
+                      placeholder="Task description"></textarea>
                   </div>
-                  
+
                 </fieldset>
                 <div>
                   <button type="submit" class="add-task-btn" id="add-task-btn">Add Task</button>
                 </div>
               </form>
             </div>
-            
+
             <div class="filterer-box">
-              
+
               <form class="filter-form removed" id="filter-form">
-                
+
                 <button type="button" class="close-btn" id="close-filter" aria-label="Close">&Cross;</button>
-                
+
                 <fieldset>
-                  
+
                   <legend>Filter By State</legend>
-                  
+
                   <div>
                     <ul class="filter-list custom-select">
                       <li><input value="All" type="submit" id="btn-all" aria-label="Show all tasks"></li>
@@ -183,7 +171,7 @@
                       <li><input value="Done" type="submit" id="btn-done" aria-label="Show finished tasks"></li>
                     </ul>
                   </div>
-                  
+
                 </fieldset>
                 <!--
                 <div>
@@ -196,7 +184,7 @@
                 </div>
                 -->
               </form>
-              
+
             </div>
             <!--
             <div class="grouper-box " id="grouper-box">
@@ -225,23 +213,23 @@
             </div>
             -->
           </div>
-          
+
         </div>
-        
+
         <div class="display-box">
           <p class="no-task" id="no-task">You don't have an any tasks. Add tasks to use the to do list.</p>
           <ul class="task-list" id="task-list"></ul>
           <p class="no-todo removed" id="no-todo"></p>
         </div>
-        
+
       </div>
     </section>
   </main>
-  
+
   <footer>
-    
+
   </footer>
-  
+
 </body>
 
 </html>
