@@ -1,30 +1,35 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   /*border: solid 1px red;/**/
 }
 
-html{
+html {
   font-size: 16px;
 }
 
-body{
+body {
   text-align: center;
-  background-color: #1E1B4B;
+  background-color: #1e1b4b;
   color: white;
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: 'Times New Roman', Times, serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Times New Roman", Times, serif;
   margin: 3vh;
 }
 
-header{
+header {
   background-image: url(../images/back.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 1vh 5vh #FFFFFF;
+  box-shadow: 0 1vh 5vh #ffffff;
   margin-bottom: 3vh auto;
   border-radius: 0;
   min-height: max-content;
@@ -32,38 +37,38 @@ header{
   overflow: scroll;
 }
 
-section{
+section {
   min-height: 100vh;
   width: 96%;
   display: block;
   margin: 3vh auto;
   padding: 1vh;
-  box-shadow: 0 0 5vh #FFFFFF;
+  box-shadow: 0 0 5vh #ffffff;
   border-radius: 1vh;
 }
 
-section:has(input:focus){
+section:has(input:focus) {
   min-height: 568px;
 }
 
-footer{
+footer {
   display: block;
 }
 
-article{
-  background: #00BEFF;
-  border: solid 0.5vw blue;
+article {
+  background: blue;
+  border: solid 0.5vw #00beff;
   margin: 5vw;
   padding: 3vw;
   border-radius: 2vh;
 }
 
-h1{
+h1 {
   font-size: 3.3rem;
   color: Gold;
 }
 
-.brandn{
+.brandn {
   font-size: 3rem;
   font-family: cursive;
   color: cyan;
@@ -71,12 +76,12 @@ h1{
   text-shadow: 0 0 10px white;
 }
 
-.brandi{
+.brandi {
   margin: 20px auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-nav{
+nav {
   background-color: white;
   padding: 20px;
   width: 80%;
@@ -87,76 +92,84 @@ nav{
 
 /* ---- Common ---- */
 
-.flexrcc{
+.flexrcc {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flexra button{
+.flexra button {
   margin: 10px auto;
 }
 
-button{
+button {
   padding: 1vw;
   background-color: white;
   border-width: 3px;
   border-radius: 10px;
 }
 
-.vnav{
+.vnav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 100%; 
+  width: 100%;
   margin: auto;
   min-height: 33vh;
 }
 
-.vnav li{
-  width:80%;
+.vnav li {
+  width: 80%;
 }
 
-.vnav a{
+.vnav a {
   width: 100%;
 }
 
-.vnav2{
+.vnav2 {
   width: fit-content;
   height: fit-content;
   padding: 0.5vh;
   margin: auto;
 }
 
-p{
+p {
   margin: 1vh auto;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-ul, ol, menu {
+ul,
+ol,
+menu {
   padding-left: 0;
   list-style-type: none;
 }
 
-ul ul, ol ol, ul ol, ol ul { 
-  padding-left: 20px; 
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  padding-left: 20px;
 }
 
-menu, nav ol {
+menu,
+nav ol {
   list-style-type: none;
   width: max-content;
 }
 
-menu li, nav li {
-  margin: 10px auto; 
+menu li,
+nav li {
+  margin: 10px auto;
 }
 
-div > a, li > a {
-  text-decoration: none; 
+div > a,
+li > a {
+  text-decoration: none;
 }
 
 li > a {
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
 }
 
 .centli {
@@ -171,27 +184,27 @@ li > a {
   text-align: left;
 }
 
-.flexra{
+.flexra {
   display: flex;
   justify-content: space-around;
 }
 
-.flexca{
+.flexca {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
-.wfc{
+.wfc {
   width: fit-content;
 }
 
-.hfc{
+.hfc {
   height: fit-content;
 }
 
-.mt5vh{
+.mt5vh {
   margin-top: 5vh;
 }
 
@@ -200,17 +213,17 @@ li > a {
   border: solid 1px white;
   border-radius: 20px;
   padding: 4vw;
-  background-color: dodgerblue;
+  background-color: blue;
   color: white;
   transition: 0.1s ease;
   margin: 5px;
-} 
+}
 
 .btn:active {
   transform: scale(0.95);
 }
 
-.invitation{
+.invitation {
   font-size: 0.9rem;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
@@ -221,19 +234,19 @@ li > a {
   border-radius: 1.5vh;
 }
 
-.invitation > div{
+.invitation > div {
   margin: 0 auto;
 }
 
 /* ----- Demo -----*/
 
-#demoin{
+#demoin {
   width: 80%;
   height: 50px;
   text-align: center;
 }
 
-#demop{
+#demop {
   border: solid 0.1rem;
   border-radius: 8px;
   display: none;
@@ -243,32 +256,31 @@ li > a {
   font-size: 1.3rem;
 }
 
-.dnone{
+.dnone {
   display: none;
 }
 
-
 /* ------ Counter ------ */
 
-.cont{
+.cont {
   font-size: 2rem;
   border: solid 1px;
   transition: 0.1s ease;
 }
 
-.cont:active{
+.cont:active {
   transform: scale(0.95);
 }
 
-#reducer{
+#reducer {
   color: red;
 }
 
-#adder{
+#adder {
   color: blue;
 }
 
-#cnum{
+#cnum {
   display: flex;
   width: 70vw;
   height: 70vw;
@@ -280,7 +292,7 @@ li > a {
   align-items: center;
 }
 
-#warning{
+#warning {
   display: none;
   color: red;
   padding: 10px;
@@ -289,23 +301,24 @@ li > a {
 
 /* ------ Gallery ------ */
 
-#galbox{
+#galbox {
   width: 70vw;
   height: 70vw;
   background-color: white;
 }
 
-select, #poster{
+select,
+#poster {
   font-size: 1.5rem;
   margin: 10px auto;
 }
 
-#poster{
+#poster {
   margin-bottom: 10vh;
   margin-left: 10vw;
 }
 
-#imgsBox{
+#imgsBox {
   background-color: dodgerblue;
   padding: 3vh 2vw;
   border-radius: 2vh;
@@ -313,7 +326,7 @@ select, #poster{
   margin: auto;
 }
 
-#imgsBox > img{
+#imgsBox > img {
   width: 15vw;
   height: 15vw;
   background-color: white;
@@ -321,13 +334,13 @@ select, #poster{
   transition: 0.1s ease;
 }
 
-#imgsBox img:active{
+#imgsBox img:active {
   transform: scale(0.95);
 }
 
 /* ------ To do list ------ */
 
-#plus{
+#plus {
   width: 13vw;
   height: 13vw;
   border-radius: 100%;
@@ -336,29 +349,29 @@ select, #poster{
   font-weight: 900;
 }
 
-#taskBox{
+#taskBox {
   display: none;
 }
 
-.done{
+.done {
   text-decoration: line-through;
 }
 
-.taskitem{
+.taskitem {
   display: grid;
   grid-template-columns: 30px auto 20%;
   margin: 40px auto;
   width: 90%;
 }
 
-.pspan{
+.pspan {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin: 0 1vw;
 }
 
-.deletebtn{
+.deletebtn {
   border: solid 1px;
   color: red;
   margin: 3px auto;
@@ -366,7 +379,7 @@ select, #poster{
 
 /* ------ Loger -------- */
 
-#logerBox{
+#logerBox {
   width: 90%;
   margin: 1vw auto;
   padding: 0.5vw;
@@ -374,15 +387,15 @@ select, #poster{
   border-radius: 2vh;
 }
 
-#logerList{
+#logerList {
   width: max-content;
   padding: 1vw;
   background: white;
   margin: 3vh auto;
 }
 
-#logerList li{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+#logerList li {
+  font-family: Georgia, "Times New Roman", Times, serif;
   padding: 5vw;
   background: black;
   color: white;
@@ -392,49 +405,47 @@ select, #poster{
   width: 100%;
   margin: 3vh auto;
   transition: 0.1s ease;
-} 
+}
 
-#logerList li:active{
+#logerList li:active {
   transform: scale(0.95);
   background-color: #555;
 }
 
 /* ------ Responsive Design -----*/
 
-@media screen and (min-width: 480px) and (max-width: 1023px){
-  html{
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+  html {
     font-size: 120%;
   }
-  
-  button{
+
+  button {
     padding: 1.5vw;
     border-width: 3px;
     border-radius: 10px;
   }
-  
+
   .btn {
     border-radius: 20px;
     padding: 3.5vw;
     margin: 5px;
-  } 
-
+  }
 }
 
-@media screen and (min-width: 1023.1px){
-  html{
+@media screen and (min-width: 1023.1px) {
+  html {
     font-size: 150%;
   }
-  button{
+  button {
     padding: 2vw;
     border-width: 5px;
     border-radius: 15px;
-    }
+  }
   .btn {
     border-radius: 20px;
     padding: 2.5vw;
     margin: 5px;
-  } 
-
+  }
 }
 
 /*
