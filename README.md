@@ -8,15 +8,15 @@ This documentation has 2 parts:
 
 ## 1. Website Overview
 ### Sparkling Tools
-A Digital Tools providing company that aims enhance the users' 
-productivity by providing different digital solutions.
+A digital tools platform that is made to enhance users' 
+productivity by providing different digital utilities.
 
 ### Products
 Currently we provide 3 main tools. 
 These are 
 1. Digital Counter
 2. Gallery
-3. Digital To Do List
+3. Digital To-Do List
 
 ## Products stage
 |No.|   Name   |stage          |
